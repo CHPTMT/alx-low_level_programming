@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="$1"; BASENAME=$(basename "$CFILE" .c); gcc -S -masm=intel "$CFILE" -o "$BASENAME.s" && echo "Assembly code saved to '$BASENAME.s'" || echo "Error: Compilation failed."
+CFILE="0-main.c"; BASENAME=$(basename "$CFILE" .c); gcc -S -masm=intel "$CFILE" -o "$BASENAME.s" && echo "Assembly code saved to '$BASENAME.s'" || echo "Error: Compilation failed."
