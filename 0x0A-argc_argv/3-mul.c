@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 /**
- * _atoi - converts a string to an integer
- * @s: string to be converted
- * Return: the int converted from the string
+ * main - multiplies two numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
-
 int main(int argc, char *argv[])
 {
-	int a, b;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	a = _atoi(argv[1]);
-	b = _atoi(argv[2]);
-	printf("%d\n", a * b);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
